@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Aperture News Test</title>
+<style>
+body {
+    background: #0f0f0f; /* тёмный фон */
+    font-family: monospace; /* моноширинный шрифт */
+    color: white; /* белый текст */
+    padding: 20px;
+}
+
+/* блок новости */
+.news-item {
+    display: flex; /* картинка слева, текст справа */
+    align-items: flex-start;
+    background: #1a1a1a; /* чуть светлее фон для новости */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/* аватарка */
+.news-item img {
+    width: 40px; /* размер иконки */
+    height: 40px;
+    border-radius: 50%; /* круглая */
+    margin-right: 10px; /* отступ от текста */
+}
+
+/* контент новости */
+.news-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* автор и дата */
+.news-content .header {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* заголовок новости */
+.news-content .body h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* текст новости */
+.news-content .body p {
+    margin: 0;
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<!-- Одна новость -->
+<div class="news-item">
+    <img src="https://i.postimg.cc/gkQTZ1TQ/Github-Avatar-WL.jpg" alt="Avatar">
+    <div class="news-content">
+        <div class="header">@KRCat — 6 March 2026</div>
+        <div class="body">
+            <h4>Hello, it's title!</h4>
+            <p>Welcome.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
